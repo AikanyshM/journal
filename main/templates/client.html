@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="media mt-5">
+        <div class="media-body">
+          <h5 class="mt-0">Имя клиента - {{client.name}}</h5>
+          <p>Год рождения клиента - {{ client.birth_year}}</p>
+          <p>Место работы - {{ client.workplace}}</p>
+          <p>Номер телефона - {{ client.phone_number}}</p>
+          <p>Семейное положение - {{ client.marital_status}}</p>
+          <p>Статус клиента - {{ client.client_status}}</p>
+        </div>
+      </div>
+{% endblock %}
